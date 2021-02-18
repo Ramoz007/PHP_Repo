@@ -43,11 +43,11 @@ class CodeGen
             }
         }
         if(strlen($trimmed_name) == 2){
-            //this append needs to be dynamic
+            //this concatenation can be dynamic
             $alpha_out .= $trimmed_name[1] . "A";
         }
         elseif (strlen($trimmed_name) == 1){
-            //this append needs to be dynamic
+            //this concatenation can be dynamic
             $alpha_out .= "BC";
         }
 
@@ -58,7 +58,7 @@ class CodeGen
 
 //create the object
 $alpha_gen = new CodeGen();
-//this must be retrieved from a database
+//this can be made to increase dynamically based on a reference value, maybe a stored value ;)  
 $numeric = "001";
 
 /*
